@@ -1,26 +1,18 @@
-# Gemini App Java 🚀
+# Gemini App Java
 
-A simple **Java project** that integrates with **Google Gemini API** to generate AI responses.  
-Built using **Maven, OkHttp, and Gson**.
+A simple Java console application that connects to Google Gemini API (simulated).
 
----
+## Setup
 
-## 📌 Features
-- Ask any question, get AI-powered responses from Gemini.
-- Simple Java console application.
-- Uses `OkHttp` for API requests and `Gson` for JSON parsing.
-- Easy to customize and extend.
+1. Set your API key in environment variable `GEMINI_API_KEY`.
+2. Build and run:
+```bash
+mvn clean install
+mvn exec:java
+```
 
----
-
-## 🛠️ Tech Stack
-- **Java 17+**
-- **Maven**
-- **Google Gemini API**
-- **OkHttp (HTTP client)**
-- **Gson (JSON parser)**
-
----
-
-## 📂 Project Structure
-
+## Project Structure
+- src/main/java/com/example/geminiapp/App.java
+- src/main/java/com/example/geminiapp/GeminiService.java
+- src/main/resources/application.properties
+- pom.xml
